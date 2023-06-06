@@ -52,7 +52,7 @@ if [ $test == "test" ]; then
     cat "$LONGPATH/outs/cpu.out" | grep -o "[0-9]*.[0-9]* Hz" | sed 's/ Hz//' > "$LONGPATH/outs/cpu.time"
     # Calc. averages
     ./scripts/average.py
-
+    
 fi
 
 #HELP
