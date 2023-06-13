@@ -43,8 +43,8 @@ for line in ram.readlines() :
         sumR += val
     count += 1
 count /=2
-print("Write DISK AVG: ", sumW / count, "MB/s", "\n\t STDDEV ", np.std(lwrite))
-print("Read DISK AVG: ", sumR / count, "MB/s", "\n\t STDDEV ", np.std(lread))
+print("Write RAM AVG: ", sumW / count, "MB/s", "\n\t STDDEV ", np.std(lwrite))
+print("Read RAM AVG: ", sumR / count, "MB/s", "\n\t STDDEV ", np.std(lread))
 ram.close()
 
 # CPU
